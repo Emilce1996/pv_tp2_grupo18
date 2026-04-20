@@ -4,7 +4,7 @@
 - Cruz Alexander – [@cruzalexander1504](https://github.com/cruzalexander1504-a11y)
 - Goyochea Kevin – [@KevinGoyochea](https://github.com/KevinGoyochea)
 - Maidana Agustin Hugo Franco – [@TellmeKubson](https://github.com/TellmeKubson)
-- Medina Brisa Lourdes – [@xLouux](https://github.com/usuarioGithub)
+- Medina Brisa Lourdes – [@xLouux](https://github.com/xLouux)
 - Sivila Emilce Andrea – [@Emilce1996](https://github.com/Emilce1996)
 
 ### Descripción del proyecto
