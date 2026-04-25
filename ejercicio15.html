@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 15</title>
+</head>
+<body>
+
+<script>
+    const retornarMes = (numero) => {
+        let mes = "";
+
+        if (numero === 1) {
+            mes = "Enero";
+        } else if (numero === 2) {
+            mes = "Febrero";
+        } else if (numero === 3) {
+            mes = "Marzo";
+        } else if (numero === 4) {
+            mes = "Abril";
+        } else if (numero === 5) {
+            mes = "Mayo";
+        } else if (numero === 6) {
+            mes = "Junio";
+        } else if (numero === 7) {
+            mes = "Julio";
+        } else if (numero === 8) {
+            mes = "Agosto";
+        } else if (numero === 9) {
+            mes = "Septiembre";
+        } else if (numero === 10) {
+            mes = "Octubre";
+        } else if (numero === 11) {
+            mes = "Noviembre";
+        } else if (numero === 12) {
+            mes = "Diciembre";
+        } else {
+            mes = "No corresponde a un mes del año.";
+        }
+
+        return mes;
+    };
+
+    const numeroIngresado = parseInt(prompt("Ingrese un numero del 1 al 12:"));
+
+    const resultado = retornarMes(numeroIngresado);
+
+    document.write(`${resultado}`);
+</script>
+
+</body>
+</html>
