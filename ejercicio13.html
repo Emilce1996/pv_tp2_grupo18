@@ -6,22 +6,19 @@
 </head>
 <body>
   <script>
-    // Función flecha que recibe un arreglo y lo muestra
+    
     const mostrarArreglo = (arr) => {
       arr.forEach(num => document.write(`<p>${num}</p>`));
     };
 
-    // Pedir cantidad de números
     const cantidad = parseInt(prompt("¿Cuántos números vas a ingresar?"));
     let numeros = [];
-
-    // Cargar números uno por uno
+    
     for (let i = 0; i < cantidad; i++) {
       const valor = parseInt(prompt(`Ingrese el número ${i+1}`));
       numeros.push(valor);
     }
 
-    // Mostrar el arreglo
     mostrarArreglo(numeros);
   </script>
 </body>
