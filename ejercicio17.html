@@ -1,27 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Ejercicio 17</title>
-</head>
-<body>
-  <script>
-    const contarLetraA = (texto) => {
-      let contador = 0;
-      for (let i = 0; i < texto.length; i++) {
-        if (texto[i].toLowerCase() === "a") {
-          contador++;
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio 17</title>
+  </head>
+  <body>
+    <script>
+      const contarLetraA = (texto) => {
+        let contador = 0;
+        for (let i = 0; i < texto.length; i++) {
+          if (texto[i].toLowerCase() === "a") {
+            contador++;
+          }
         }
+        return contador;
+      };
+
+      const cadena = prompt("Ingrese un texto:");
+
+      const cantidadA = contarLetraA(cadena);
+
+      document.write(`<p>Texto ingresado: "${cadena}"</p>`);
+      if (cantidadA === 1) {
+        document.write(`<p>La letra "a" aparece solo una vez.</p>`);
+      } else {
+        document.write(`<p>La letra "a" aparece ${cantidadA} veces.</p>`);
       }
-      return contador;
-    };
-
-    const cadena = prompt("Ingrese un texto:");
-
-    const cantidadA = contarLetraA(cadena);
-
-    document.write(`<p>Texto ingresado: "${cadena}"</p>`);
-    document.write(`<p>La letra "a" aparece ${cantidadA} veces.</p>`);
-  </script>
-</body>
+    </script>
+  </body>
 </html>
