@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 18</title>
+</head>
+
+<body>
+    <script>
+
+        const CalcularMayor = (numero1, numero2) => {
+            if (numero1 > numero2) {
+                document.write(`El numero (${numero1}) es mayor que el numero (${numero2})`);
+            }
+            else if (numero2 > numero1) {
+                document.write(`El numero (${numero2}) es mayor que el numero (${numero1}`);
+            }
+            else {
+                document.write(`Los numeros ingresados son iguales`);
+            }
+        };
+
+        let num1 = prompt(`Ingrese el primer numero: `);
+        let num2 = prompt(`Ingrese el segundo numero: `);
+        CalcularMayor(num1, num2);
+
+    </script>
+</body>
+
+</html>
