@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  text-align: center;
+  padding: 40px;
+}
+
+label {
+  margin: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: block;
+}
+
+/* Menús desplegables con fondo morado */
+select {
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #7900cf;
+  border-radius: 6px;
+  background-color: #c850f7;
+  color: #000000;
+  width: 220px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+select:hover {
+  background-color: #ca71f1;
+}
+
+/* Recuadro de resultado */
+#resultado {
+  margin: 30px auto;
+  padding: 20px;
+  width: 60%;
+  max-width: 500px;
+  border: 2px solid #9b59b6;
+  border-radius: 10px;
+  background-color: rgba(155, 89, 182, 0.1);
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
