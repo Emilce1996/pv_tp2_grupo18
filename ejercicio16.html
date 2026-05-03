@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio 16</title>
+  </head>
+  <body>
+    <script>
+      const sumarRango = (inicio, fin) => {
+        let suma = 0;
+        for (let i = inicio; i <= fin; i++) {
+          suma += i;
+        }
+        return suma;
+      };
+
+      const inicio = parseInt(prompt("Ingrese el número inicial:"));
+      const fin = parseInt(prompt("Ingrese el número final:"));
+
+      if (inicio > fin) {
+        document.write(
+          `<p>Error: el número inicial debe ser menor o igual que el número final.</p>`,
+        );
+      } else {
+        const resultado = sumarRango(inicio, fin);
+        document.write(
+          `<p>La suma de los números entre ${inicio} y ${fin} es: ${resultado}</p>`,
+        );
+      }
+    </script>
+  </body>
+</html>
