@@ -1,18 +1,21 @@
-export const obtenerValor = (selector) => {
-  const elemento = document.querySelector(selector);
-  return elemento.value;
-};
+// Función y evento en el mismo archivo
+const actualizarTexto = (input, output) => {
+  const texto = input.value.trim();
+  output.textContent = texto;
 
-export const mostrarTexto = (selectorDestino, texto) => {
-  const destino = document.querySelector(selectorDestino);
-  destino.textContent = texto;
-};
-
-export const cambiarColorSiExcede = (selectorDestino, texto) => {
-  const destino = document.querySelector(selectorDestino);
-  if (texto.length > 20) {
-    destino.style.backgroundColor = "#c6caf7";
+  if (texto.length === 0) {
+    output.style.backgroundColor = "transparent";
+  } else if (texto.length <= 20) {
+    output.style.backgroundColor = "#e8f5e9"; 
   } else {
-    destino.style.backgroundColor = "rgba(155, 89, 182, 0.1)";
+    output.style.backgroundColor = "#ffebee"; 
   }
 };
+
+const entrada = document.getElementById("entrada");
+const salida = document.getElementById("salida");
+
+entrada.addEventListener("input", () => {
+  actualizarTexto(entrada, salida);
+});
+
